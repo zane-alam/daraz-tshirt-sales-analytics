@@ -10,3 +10,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 ```
+2. Load dataset
+
+```python
+df = pd.read_csv('/content/daraz_raw_tshirt_sales_data.csv')
+```
