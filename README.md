@@ -3,8 +3,8 @@ Daraz T‑Shirt Sales Analytics — CSV (3,280 rows, 9 cols). Reproducible analy
 
 **Handling Missing Values using python**
 #1.Import required python libraries
-python**
+```python
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-**
+```
