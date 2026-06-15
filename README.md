@@ -60,8 +60,16 @@ df = df.drop(columns=['Unnamed: 9', 'Unnamed: 10'], errors='ignore')
 print("Remaining columns:", df.columns.tolist())
 display(df.head())
 ```
+8. Fixing the price column and extracting only numeric values
 
-8. Download the updated csv dataset
+```python
+df['Price'] = df['Price'].astype(str).str.replace('à§³', '', regex=False).str.strip()
+df['Price'] = pd.to_numeric(df['Price'], errors='coerce')
+print("Cleaned Price Head:")
+print(df['Price'].head())
+df.info()
+```
+10. Download the updated csv dataset
 
 ```python
 from google.colab import files
