@@ -21,7 +21,6 @@ df = pd.read_csv('/content/daraz_raw_tshirt_sales_data.csv')
 ```python
 df.info()
 ```
-
 4. FInd the amount of Missing values
 
 ```python
