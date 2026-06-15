@@ -69,7 +69,7 @@ print("Cleaned Price Head:")
 print(df['Price'].head())
 df.info()
 ```
-10. Download the updated csv dataset
+9. Download the updated csv dataset
 
 ```python
 from google.colab import files
